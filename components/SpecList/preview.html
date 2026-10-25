@@ -1,0 +1,16 @@
+<!-- @dsCard group="Contenido" height=320 subtitle="Formato PRD" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>SpecList</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(L.SpecList, { items: [
+    { label: 'Problema', value: 'Descripción del problema en una o dos frases.' },
+    { label: 'Objetivo y métrica', value: 'Qué cifra tiene que moverse y hasta dónde.' },
+    { label: 'Dentro del alcance', value: ['Requisito uno', 'Requisito dos', 'Requisito tres'] },
+    { label: 'Fuera del alcance', value: ['Lo que se deja fuera a propósito'] } ] }));
+</script>
+</body>
+</html>

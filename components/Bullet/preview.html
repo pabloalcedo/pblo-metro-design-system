@@ -1,0 +1,16 @@
+<!-- @dsCard group="Señalética" height=200 subtitle="6 líneas · sm / md / lg" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>Bullet</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  var lines = ['P','X','E','N','S','A'];
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h('div', { className: 'ln-demo-row' }, lines.map(function (l) { return h(L.Bullet, { key: l, line: l, size: 'lg' }, l); })),
+    h('div', { className: 'ln-demo-row' }, lines.map(function (l) { return h(L.Bullet, { key: l, line: l, size: 'md' }, l); }),
+      h(L.Bullet, { line: 'blue', size: 'md' }, 'PM'), h(L.Bullet, { line: 'yellow', size: 'sm' }, '03'), h(L.Bullet, { line: 'red', size: 'sm' }, '7'))));
+</script>
+</body>
+</html>

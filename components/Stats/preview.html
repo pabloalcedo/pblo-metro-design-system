@@ -1,0 +1,13 @@
+<!-- @dsCard group="Estructura" height=160 subtitle="Tres cifras" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>Stats</title></head>
+<body>
+<div id="root" class="ln-demo" style="max-width:560px"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(L.Stats, { items: [
+    { value: '7', label: 'productos lanzados' }, { value: '4', label: 'sectores: fintech, retail, logística, SaaS' }, { value: '6', label: 'años creando producto' } ] }));
+</script>
+</body>
+</html>

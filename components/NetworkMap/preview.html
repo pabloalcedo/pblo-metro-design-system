@@ -1,0 +1,16 @@
+<!-- @dsCard group="Estructura" height=560 subtitle="Producto con transbordo · Escritura aparte" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>NetworkMap</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(L.NetworkMap, { title: 'Plano de la red · toca una estación', lines: [
+    { line: 'P', label: 'Productos', territory: 'producto', stations: [{ label: 'Andén Uno', meta: '2026', href: '#' }, { label: 'Andén Dos', meta: '2025', href: '#' }, { label: 'Próximo producto', status: 'soon' }] },
+    { line: 'X', label: 'Experimentos', territory: 'producto', stations: [{ label: 'Prototipo A', meta: '2026', href: '#' }, { label: 'Prototipo B', status: 'soon' }] },
+    { line: 'N', label: 'Notas de producto', territory: 'producto', stations: [{ label: 'Nota de ejemplo', meta: 'oct 2026', href: '#' }] },
+    { line: 'E', label: 'Escritura', territory: 'escritura', stations: [{ label: 'Texto de ejemplo', meta: 'dic 2025', href: '#' }, { label: 'Otro texto', meta: 'ene 2025', href: '#' }] } ] }));
+</script>
+</body>
+</html>

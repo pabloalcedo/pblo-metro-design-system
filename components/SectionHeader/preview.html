@@ -1,0 +1,14 @@
+<!-- @dsCard group="Estructura" height=220 subtitle="Sin línea · con línea" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>SectionHeader</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(L.SectionHeader, { title: 'Todos los productos', meta: '4 productos · 2 experimentos' }),
+    h(L.SectionHeader, { title: 'Notas de producto', meta: 'Lo que pienso sobre crear producto', line: 'N' })));
+</script>
+</body>
+</html>

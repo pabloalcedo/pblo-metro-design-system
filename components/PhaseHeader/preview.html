@@ -1,0 +1,14 @@
+<!-- @dsCard group="Contenido" height=360 subtitle="Fase fija · sección opcional" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>PhaseHeader</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(L.PhaseHeader, { number: '01', title: 'Discovery', meta: '3 semanas · 12 entrevistas', summary: 'Qué problema había de verdad y para quién.' }),
+    h(L.PhaseHeader, { number: '03', title: 'Mapa conceptual', optional: true, summary: 'Cómo se relacionan las piezas del producto.' })));
+</script>
+</body>
+</html>

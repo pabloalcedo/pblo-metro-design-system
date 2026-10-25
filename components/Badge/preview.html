@@ -1,0 +1,15 @@
+<!-- @dsCard group="Señalética" height=96 subtitle="Relleno / contorno" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>Badge</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { className: 'ln-demo-row' },
+      h(L.Badge, { line: 'P' }, 'Producto'), h(L.Badge, { line: 'E' }, 'Relato'), h(L.Badge, { line: 'A' }, 'Archivado'),
+      h(L.Badge, { line: 'X', variant: 'outline' }, 'Prototipo'), h(L.Badge, { line: 'S', variant: 'outline' }, 'Fintech'), h(L.Badge, { line: 'E', variant: 'outline' }, 'B2B SaaS')));
+</script>
+</body>
+</html>

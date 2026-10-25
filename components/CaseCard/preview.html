@@ -1,0 +1,15 @@
+<!-- @dsCard group="Contenido" height=460 subtitle="Producto · producto · experimento" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>CaseCard</title></head>
+<body>
+<div id="root" class="ln-demo" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(L.CaseCard, { title: 'Checkout en un solo paso', meta: '2025 · Marketplace de moda', summary: 'Un flujo de cinco pantallas perdía a uno de cada tres compradores en móvil.', metric: '−22\u00a0%', metricLabel: 'abandono en el checkout' }),
+    h(L.CaseCard, { title: 'Pricing por uso para pymes', meta: '2024 · SaaS B2B', summary: 'Pasar de licencias por asiento a consumo sin perder ingresos en la migración.', metric: '+31\u00a0%', metricLabel: 'conversión de prueba a pago' }),
+    h(L.CaseCard, { line: 'X', cta: 'Ver el experimento', title: 'Asistente de priorización', meta: '2026 · Proyecto propio', transfers: ['P'], summary: 'Un prototipo que ordena el backlog a partir de entrevistas transcritas.', metric: '40', metricLabel: 'equipos en la beta' })));
+</script>
+</body>
+</html>

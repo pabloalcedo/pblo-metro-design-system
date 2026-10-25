@@ -1,0 +1,16 @@
+<!-- @dsCard group="Contenido" height=480 subtitle="Terminal · transbordo · estación" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>RouteTimeline</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(L.RouteTimeline, { line: 'S', stops: [
+      { period: '2024 — hoy', role: 'Senior product manager', org: 'Empresa actual', description: 'Responsable de checkout y pagos: tres equipos, un objetivo de conversión.' },
+      { period: '2021 — 2024', role: 'Product manager', org: 'Empresa anterior', description: 'Lancé el plan por uso que hoy supone el 40 % de los ingresos nuevos.', transfer: true },
+      { period: '2018 — 2021', role: 'Analista de producto', org: 'Primera empresa', description: 'Monté el primer sistema de métricas de producto de la compañía.' } ] }));
+</script>
+</body>
+</html>

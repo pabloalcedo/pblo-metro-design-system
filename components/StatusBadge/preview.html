@@ -1,0 +1,13 @@
+<!-- @dsCard group="Señalética" height=80 subtitle="En servicio · pronto · fuera de servicio" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>StatusBadge</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'ln-demo-row' },
+    h(L.StatusBadge, { status: 'live' }), h(L.StatusBadge, { status: 'soon' }), h(L.StatusBadge, { status: 'retired' })));
+</script>
+</body>
+</html>

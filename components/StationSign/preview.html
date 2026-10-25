@@ -1,0 +1,14 @@
+<!-- @dsCard group="Señalética" height=420 subtitle="Página y compacto" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>StationSign</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(L.StationSign, { size: 'page', kicker: 'Línea P · 7 productos', title: 'Productos', lines: ['P', 'X'] }),
+    h(L.StationSign, { kicker: 'Línea E · Escritura · Relato · 2026', title: 'El último vagón', lines: ['E'] })));
+</script>
+</body>
+</html>

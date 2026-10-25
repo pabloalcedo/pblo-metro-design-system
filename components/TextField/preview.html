@@ -1,0 +1,16 @@
+<!-- @dsCard group="Acciones" height=300 subtitle="Suscripción y error" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>TextField</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h('form', { className: 'ln-inline-form', onSubmit: function (e) { e.preventDefault(); } },
+      h(L.TextField, { label: 'Recibe los nuevos escritos', type: 'email', placeholder: 'tu@correo.com', help: 'Uno al mes, como mucho. Te das de baja con un clic.' }),
+      h('div', { style: { paddingBottom: 'calc(14px * 1.4 + 8px)' } }, h(L.Button, { type: 'submit' }, 'Suscribirme'))),
+    h(L.TextField, { label: 'Correo', type: 'email', defaultValue: 'pablo.correo.com', error: 'Revisa el correo: falta la @.' })));
+</script>
+</body>
+</html>

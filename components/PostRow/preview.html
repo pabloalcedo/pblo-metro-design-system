@@ -1,0 +1,16 @@
+<!-- @dsCard group="Contenido" height=340 subtitle="Escritura" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>PostRow</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('ul', { className: 'ln-posts' },
+      h('li', null, h(L.PostRow, { date: '14 oct 2026', line: 'E', title: 'El último vagón', excerpt: 'Un relato sobre la gente que viaja siempre en el mismo sitio.', readingTime: '6 min' })),
+      h('li', null, h(L.PostRow, { date: '02 oct 2026', line: 'E', title: 'Lo que dejó mi abuela en los márgenes', readingTime: '3 min' })),
+      h('li', null, h(L.PostRow, { date: '18 sep 2026', line: 'E', title: 'Elogio de la sobremesa', excerpt: 'Sobre las conversaciones que solo empiezan cuando ya no queda nada en el plato.', readingTime: '8 min' }))));
+</script>
+</body>
+</html>

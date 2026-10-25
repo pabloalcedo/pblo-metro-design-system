@@ -1,0 +1,15 @@
+<!-- @dsCard group="Contenido" height=130 subtitle="Fijas rellenas · opcionales huecas" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>PhaseRoute</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(L.PhaseRoute, { phases: [
+    { id: 'discovery', number: '01', label: 'Discovery' }, { id: 'prd', number: '02', label: 'PRD' },
+    { id: 'mapa', number: '03', label: 'Mapa conceptual', optional: true }, { id: 'flujos', number: '04', label: 'Flujos', optional: true },
+    { id: 'mockups', number: '05', label: 'Mockups', optional: true }, { id: 'resultados', number: '06', label: 'Resultados' } ] }));
+</script>
+</body>
+</html>

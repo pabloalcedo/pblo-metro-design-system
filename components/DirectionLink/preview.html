@@ -1,0 +1,16 @@
+<!-- @dsCard group="Señalética" height=200 subtitle="Anterior · siguiente · índice" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>DirectionLink</title></head>
+<body>
+<div id="root" class="ln-demo"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h('div', { className: 'ln-demo-row', style: { justifyContent: 'space-between' } },
+      h(L.DirectionLink, { direction: 'left', meta: 'Producto anterior' }, 'Abrir una cuenta en tres minutos'),
+      h(L.DirectionLink, { direction: 'right', meta: 'Producto siguiente' }, 'Planes por uso')),
+    h('div', { className: 'ln-demo-row' }, h(L.DirectionLink, { direction: 'up-left', align: 'start' }, 'Todos los productos'))));
+</script>
+</body>
+</html>

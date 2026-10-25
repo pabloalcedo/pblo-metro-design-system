@@ -1,0 +1,13 @@
+<!-- @dsCard group="Contenido" height=200 subtitle="Actual · publicada · pronto" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>SeriesRoute</title></head>
+<body>
+<div id="root" class="ln-demo" style="max-width:280px"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(L.SeriesRoute, { title: 'Serie · Trayectos · 2 de 4', items: [
+    { label: 'La primera hora' }, { label: 'El último vagón', current: true }, { label: 'Cambio de andén · pronto', soon: true }, { label: 'Fin de trayecto · pronto', soon: true } ] }));
+</script>
+</body>
+</html>

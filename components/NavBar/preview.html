@@ -1,0 +1,16 @@
+<!-- @dsCard group="Navegación" height=120 subtitle="Producto | Escritura | Sobre mí · en móvil, selector desplegable" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>NavBar</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(L.NavBar, { name: 'Pblo', items: [
+      { label: 'Productos', line: 'P', group: 'producto', current: true }, { label: 'Experimentos', line: 'X', group: 'producto' },
+      { label: 'Notas de producto', line: 'N', group: 'producto' }, { label: 'Escritura', line: 'E', group: 'escritura' },
+      { label: 'Sobre mí', line: 'S', group: 'personal' } ] }));
+</script>
+</body>
+</html>

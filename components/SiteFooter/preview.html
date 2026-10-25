@@ -1,0 +1,17 @@
+<!-- @dsCard group="Estructura" height=260 subtitle="Marca + mapa por territorios" -->
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>SiteFooter</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var L = window.PbloMetro, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(L.SiteFooter, {
+    brand: 'Pblo', tagline: 'Pablo Alcedo. Creo productos digitales. También escribo, de otras cosas.', legal: '© 2026 Pablo Alcedo · Hecho con Pblo Metro',
+    columns: [
+      { title: 'Producto', links: [{ label: 'Productos' }, { label: 'Experimentos' }, { label: 'Notas de producto' }] },
+      { title: 'Escritura', links: [{ label: 'Escritura' }] },
+      { title: 'Contacto', links: [{ label: 'Escríbeme' }, { label: 'LinkedIn' }, { label: 'GitHub' }] } ] }));
+</script>
+</body>
+</html>
