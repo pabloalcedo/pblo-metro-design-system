@@ -1,5 +1,105 @@
 # 🚇 Pblo Metro Design System (PM Portfolio Edition)
 
+## 🇬🇧 English
+
+### 🚇 Pblo Metro Design System (PM Portfolio Edition)
+
+> **A design system focused on readability, visual clarity, and cognitive guidance in the storytelling of digital products and portfolios.**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-In%20Production-brightgreen)](https://pablo.es)
+
+---
+
+## 📌 Executive Summary & Product Vision
+
+**Pblo Metro** is the design system and visual infrastructure deployed in production for [pablo.es](https://pablo.es), Pablo Alcedo’s personal website: a showcase for the products he creates and a space where he publishes technical and literary reflections.
+
+Inspired by **1970s public transport signage** (black panels with white rules, a condensed grotesk typeface, color-coded discs, arrows, and a strict modular grid), this design system brings public-information design principles to the web: **help people find their way and process information with as little cognitive friction as possible.**
+
+---
+
+## 🎯 The Product Problem
+
+When evaluating Product Management portfolios, readers (Heads of Product, Senior PMs, and recruiters) often face two inefficient extremes:
+
+1. **Hard-to-read walls of text:** Dense project write-ups with little hierarchy that are difficult to scan.
+2. **Generic, decorative layouts:** Standard interfaces that communicate neither personality nor analytical rigor.
+
+### The solution: signage-inspired UI for case studies
+
+Just as a metro map helps people navigate an unfamiliar city without prior knowledge, these components show readers the current state of a product (Discovery, PRD, Delivery, Iteration) at a glance, prioritizing clarity over decoration.
+
+---
+
+## ⚙️ Design and Product Principles
+
+1. **Orient before decorating:** Every visual element answers a visitor’s question (*Where am I? What is this? Where can I go next?*). If an element does not help orient the visitor, it is unnecessary.
+2. **One source of truth:** `Content type = line = color = glyph`, keeping the same combination consistent across the website.
+3. **Square and modular:** Every panel, button, and field is rectangular (`radius-none`) and follows multiples of the `space-12` module (48px). Only bullets and stations are round (`radius-bullet`).
+4. **Color is scarce and meaningful:** The website acts as paper and ink. Color appears only in route elements (bullets, badges, bands), never as a section background or gradient.
+
+---
+
+## 🗺️ Territories and Lines
+
+The website is divided into two independent territories that do not mix. Strict color coding helps visitors find their way:
+
+| Territory | Line | Glyph / Color | Content and focus |
+| :--- | :--- | :--- | :--- |
+| **Product** | **Products (P)** | `line-red` | Products launched with real users and public metrics. |
+| **Product** | **Experiments (X)** | `line-magenta` | Prototypes, ideas being validated, and learning hypotheses. |
+| **Product** | **Product notes (N)** | `line-yellow` | Short writing about building software and product management. |
+| **Writing** | **Writing (E)** | `line-blue` | Personal writing, stories, and essays (without professional jargon). |
+| **Common** | **About me (S)** | `line-green` | Bio, professional background (`RouteTimeline`), and contact. |
+| **Common** | **Archive (A)** | `line-grey` | Older or retired content. |
+
+> 🌐 **See the system in action:** [pablo.es](https://pablo.es)
+
+---
+
+## 🧩 Core Components
+
+The design system and its product case studies are built around these key components:
+
+- **`StationSign`**: Main header styled as a station panel (pure black with a top rule, title, and transfer bullets on the right).
+- **`RouteTimeline` / `PhaseRoute`**: A visual metro line for structuring roadmaps, development phases (Discovery, PRD, Results), and key milestones.
+- **`NetworkMap`**: A holistic network map that visually connects different products and experiments.
+- **`CaseCard` & `SpecList`**: Structured product briefs in a strict PRD format (*Problem, Audience, Goal/Metric, In/Out of scope, Key requirements, Risks*).
+- **`StatusBadge`**: A real-time service-status indicator (*In service, Beta, Archived*).
+
+---
+
+## 🤖 AI-Assisted Product Workflow (Human + Claude)
+
+This design system and its production implementation were developed through an **AI-assisted development workflow**:
+
+1. **Iterative mockup definition:** Collaborative concept development and refinement of page templates (desktop-first, optimized for technical reading and recruiting).
+2. **Technology-agnostic tokens (`tokens.json` and `tokens.css`):** Design values are abstracted from the final WordPress implementation.
+3. **Readability optimization:** Strict use of the grotesk typeface *Archivo*, with tight tracking in headings, and the monospaced typeface *IBM Plex Mono* for metadata and platform times.
+
+---
+
+## 🛠️ Technical Specifications and Usage
+
+All components are packaged as CSS classes prefixed with `ln-` in `components/bundle.css`, integrated directly into [pablo.es](https://pablo.es), and compatible with any modern stack or content management system such as **WordPress.org**.
+
+- **Typefaces:** Google Fonts (*Archivo* and *IBM Plex Mono*).
+- **Spacing:** A scale based on multiples of 4px, with a base `space-12` module (48px).
+- **Motion:** Subtle, functional animations (120ms `ease-out`) that fully respect `prefers-reduced-motion`.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+
+---
+
+## 🇪🇸 Español
+
+### 🚇 Pblo Metro Design System (PM Portfolio Edition)
+
 > **Un sistema de diseño orientado a la legibilidad, claridad visual y guía cognitiva en la narrativa de productos digitales y portfolio.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
